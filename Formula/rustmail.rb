@@ -1,33 +1,34 @@
 class Rustmail < Formula
   desc "Self-hosted SMTP mail catcher with web UI, REST API, and CI assertions"
   homepage "https://github.com/rustmailapp/rustmail"
-  version "0.1.1"
+  version "0.1.2"
   license "MIT OR Apache-2.0"
 
   on_macos do
     on_arm do
-      url "https://github.com/rustmailapp/rustmail/releases/download/v0.1.1/rustmail-aarch64-apple-darwin.tar.gz"
-      sha256 "827fece27d8b9b54f253e11841f494eea0ca598e3181cdd2e705c5bdd1d86951"
+      url "https://github.com/rustmailapp/rustmail/releases/download/v0.1.2/rustmail-aarch64-apple-darwin.tar.gz"
+      sha256 "9d29d0312a2d89e35b29f76ead7fde0fbbb934e4b132068a47f5329929d04c81"
     end
     on_intel do
-      url "https://github.com/rustmailapp/rustmail/releases/download/v0.1.1/rustmail-x86_64-apple-darwin.tar.gz"
-      sha256 "b06a175c54f2ced91104183577d7077f4bd7ea8669801b1a2d2d5e448764310b"
+      url "https://github.com/rustmailapp/rustmail/releases/download/v0.1.2/rustmail-x86_64-apple-darwin.tar.gz"
+      sha256 "c58eb04e78829d25405e14cb5897a9bf478297d488c71e878982cf8dcf3b3292"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/rustmailapp/rustmail/releases/download/v0.1.1/rustmail-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "198442c9f0b8e95ceee39c39b1c27b5646f745cd229a9453984f54b79b50d208"
+      url "https://github.com/rustmailapp/rustmail/releases/download/v0.1.2/rustmail-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "bc813033b114c18c16e73a148d4d4d3c7c024d6c924d9d0acf132ea0aee338b6"
     end
     on_intel do
-      url "https://github.com/rustmailapp/rustmail/releases/download/v0.1.1/rustmail-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "95ff8043936b2b4f814573c18e14b331d319a9dfe6269e1c0469cb6a8bdbd3a0"
+      url "https://github.com/rustmailapp/rustmail/releases/download/v0.1.2/rustmail-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "4184bf22cede1e534774a4906d26c2ba4f2959ba09d5ed1a0a7d3e2572f6444f"
     end
   end
 
   def install
     bin.install "rustmail"
+    (var/"rustmail").mkpath
   end
 
   service do
