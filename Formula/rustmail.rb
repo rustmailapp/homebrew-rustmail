@@ -1,28 +1,28 @@
 class Rustmail < Formula
   desc "Self-hosted SMTP mail catcher with web UI, REST API, and CI assertions"
   homepage "https://github.com/rustmailapp/rustmail"
-  version "0.2.1"
+  version "0.2.2"
   license "MIT OR Apache-2.0"
 
   on_macos do
     on_arm do
-      url "https://github.com/rustmailapp/rustmail/releases/download/v0.2.1/rustmail-aarch64-apple-darwin.tar.gz"
-      sha256 "abc17058ca389ffc7eeaa6add63e8bb3abc12228d45a5876f52ca03a2ea32a62"
+      url "https://github.com/rustmailapp/rustmail/releases/download/v0.2.2/rustmail-aarch64-apple-darwin.tar.gz"
+      sha256 "7f5a4f87e6297595c7e1bc9ff50130fb136444a63c8db30adb78578b43463306"
     end
     on_intel do
-      url "https://github.com/rustmailapp/rustmail/releases/download/v0.2.1/rustmail-x86_64-apple-darwin.tar.gz"
-      sha256 "1e2f89040c6423f21177c6a382aa656908ba280933bc9d343e2b0bd67f4921d0"
+      url "https://github.com/rustmailapp/rustmail/releases/download/v0.2.2/rustmail-x86_64-apple-darwin.tar.gz"
+      sha256 "ce49bdc89cdea71af645bd8e000279a83afb2aa86be01a41c23a61a0714bd745"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/rustmailapp/rustmail/releases/download/v0.2.1/rustmail-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "8bac2f279ef8509e496ee2795eee5d1b4a26c675abb193fe30035f2fd0ccf5d2"
+      url "https://github.com/rustmailapp/rustmail/releases/download/v0.2.2/rustmail-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "66e2cd0c6f65b927b320c1f33aa506779266c494c21ffe507c0963ac2b3083a2"
     end
     on_intel do
-      url "https://github.com/rustmailapp/rustmail/releases/download/v0.2.1/rustmail-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "bf2323c8508b8b17d332a1313f047ed5fc9f261b85db86871a61aad4abcc12b3"
+      url "https://github.com/rustmailapp/rustmail/releases/download/v0.2.2/rustmail-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "3bdcdd51f798a8720ea66da4a0086953a8d2cb9abd0e1ea978083586d395fa47"
     end
   end
 
